@@ -376,7 +376,7 @@ func weapon_change():
 	slowed = true
 	trigger_event("weapon_change_started")
 	await event_finished
-	print(weapon_type)
+	#print(weapon_type)
 	weapon_change_ended.emit(weapon_type)
 	slowed = false
 	
@@ -393,7 +393,7 @@ func gadget_change():
 	slowed = true
 	trigger_event("gadget_change_started")
 	await event_finished
-	print(gadget_type)
+	#print(gadget_type)
 	gadget_change_ended.emit(gadget_type)
 	await get_tree().create_timer(anim_length *.5).timeout
 	slowed = false

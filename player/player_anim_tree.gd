@@ -196,7 +196,7 @@ func set_ladder():
 	#elif ladder_frame < 0:
 		#ladder_frame = 1
 	#set("parameters/MovementStates/LADDER_tree/LadderBlender/blend_position",ladder_frame - (player_node.input_dir.y * .015)) # otherwise, play the animation at the speed of player input (* a speed if climb anim is slow)
-	print(player_node.input_dir.y)
+	#print(player_node.input_dir.y)
 	set("parameters/MovementStates/LADDER_tree/LadderTime/scale",-player_node.input_dir.y)
 			
 func set_strafe():
